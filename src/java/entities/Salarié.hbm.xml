@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class catalog="Sodisma" name="entities.Salarié" optimistic-lock="version" table="salarié">
+    <id name="codeemp" type="java.lang.Integer">
+      <column name="coeemp"/>
+      <generator class="identity"/>
+    </id>
+    <property name="nomemp" type="string">
+      <column length="55" name="nompemp" not-null="true"/>
+    </property>
+    <property name="villeemp" type="string">
+      <column length="30" name="villeemp" not-null="true"/>
+    </property>
+    <property name="sexe" type="int">
+      <column name="sexe" not-null="true"/>
+    </property>
+  </class>
+</hibernate-mapping>
